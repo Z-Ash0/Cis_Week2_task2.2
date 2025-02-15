@@ -12,29 +12,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Map<String, dynamic>> tasks = [
-    {
-      'title': 'Communication Systems Quiz',
-      'time': '10:00 AM',
-    },
-    {
-      'title': 'OS Report',
-      'time': '11:00 AM',
-    },
-    {
-      'title': 'Flutter Assignment',
-      'time': '12:00 PM',
-    },
-    {
-      'title': 'Meeting with Client',
-      'time': '02:00 PM',
-    },
-    {
-      'title': 'Dinner with Friends',
-      'time': '08:00 PM',
-    },
-  ];
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -49,7 +26,7 @@ class _HomePageState extends State<HomePage> {
           centerTitle: true,
           backgroundColor: Colors.transparent,
         ),
-        body: ToDoList(list: tasks),
+        body: const ToDoList(),
       ),
     );
   }
