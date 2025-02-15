@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task2p2_w2/core/utils/app_colors.dart';
 import 'package:task2p2_w2/core/utils/app_constants.dart';
 
 class AppTextStyles {
@@ -6,9 +7,11 @@ class AppTextStyles {
     fontSize: 24,
     fontWeight: FontWeight.bold,
     fontFamily: raleWayFont,
+    color: AppColors.whiteColor,
   );
-  static const TextStyle fontSize12Raleway = TextStyle(
-    fontSize: 12,
+  static const TextStyle fontSize18RalewayWhite = TextStyle(
+    fontSize: 18,
     fontFamily: raleWayFont,
+    color: AppColors.whiteColor,
   );
 }
